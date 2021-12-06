@@ -24,7 +24,7 @@
 
         <ul class="header-buttons">
           <li class="list header-menu-item">
-            <a href="./index.html" class="link site-nav-text current">Студия</a>
+            <a href="./index.html" class="link site-nav-text current current-line">Студия</a>
           </li>
           <li class="list header-menu-item">
             <a href="./portfolio.html" class="link site-nav-text">Портфолио</a>
@@ -58,7 +58,7 @@
     <section class="hero-bg-temporary">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнесса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!--Firm quality section-->
@@ -115,12 +115,15 @@
         <ul class="work-ul">
           <li class="list work-item">
             <img src="./images/img.jpg" width="370" height="294" alt="Работаем с алгоритмами на пк">
+            <p class="our-work-text">Десктопные приложения</p>
           </li>
           <li class="list work-item">
             <img src="./images/img2.jpg" width="370" height="294" alt="Работаем с алгоритмами на смартфонах">
+            <p class="our-work-text">Мобильные приложения</p>
           </li>
           <li class="list work-item">
             <img src="./images/img3.jpg" width="370" height="294" alt="Работаем с графикой">
+            <p class="our-work-text">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -381,6 +384,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrope is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="close-icon" width="18" height="18">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
