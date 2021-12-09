@@ -63,6 +63,7 @@ ul {
 
 .logo-navigation {
   display: flex;
+  
 }
 
 .header-menu-item:not(:first-child) {
@@ -111,6 +112,7 @@ ul {
   display: flex;
   align-items: center;
   margin-left: auto;
+  
 }
 
 body {
@@ -186,7 +188,7 @@ body {
   background: #2196f3;
   border-radius: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 
@@ -367,7 +369,9 @@ body {
   line-height: 1.19;
   color: var(--primary-text-color);
   text-align: center;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  letter-spacing: 0.03em;
 }
 /* TEAM */
 
@@ -487,6 +491,13 @@ body {
 .footer-item-icons {
   width: 44px;
   height: 44px;
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-item-icons:not(:last-child) {
+  margin-right: 10px;
 }
 
 
@@ -517,9 +528,6 @@ body {
  display: flex;
 }
 
-.team-title {
-  margin-left: 20px;
-}
 
 .social-networks {
   display: flex;
